@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Musicas</title>
+    <link rel="icon" href="Icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+<!-- Son -->
+        <div class="img-container">
+            <img src="" alt="Album Art">
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio src=""></audio>
+<!-- Progresso -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration"></span>
+            </div>
+        </div>
+<!-- Controles -->  
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+                <i class="fas fa-volume-down" id="volume-down"></i>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1"/>
+   <!--         <i class="fas fa-volume-up" id="volume-up"></i> --> 
+        </div>
+    </div>
+<!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
